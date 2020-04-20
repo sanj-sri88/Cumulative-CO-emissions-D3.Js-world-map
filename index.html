@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <link type="text/css" rel="stylesheet" href="style/main.css" />
+</head>
+
+<body>
+
+    <div id="jaarheader" class="jaartalkop">
+        <span id="jaarkop">...</span>
+    </div>
+
+    <div id="chart">
+    </div>
+
+    <!--<div id="legenda">
+    </div>-->
+
+    <div id="slidervakje" title="gebruik de aanwijzer en/of de pijltjestoetsen - afhankelijk van je browser - om door de jaren te stappen">
+        <div id="meter" class="play-icon inb">
+            <svg id="meterplaatje" onClick="animeerMij('#meterplaatje', 'gauge_run.gif', 'SUM')" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="play" class="svg-inline--fa fa-play fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path fill="currentColor" d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"></path>
+            </svg>
+        </div>
+        <div id="jaarlinks" class="minmaxjaar">1949</div>
+
+        <form name="sliderBox" id="sliderBox" action="#" method="GET">
+
+            <input name="tijdSlide" id="tijdSlide" type="range" min="1949" max="2017" step="1" value="2017" onChange="wissel_jaar(this.form, 'SUM')">
+
+        </form>
+
+        <div id="jaarrechts" class="minmaxjaar">2017</div>
+
+    </div>
+</body>
+	<script type="text/javascript" src="D3/d3.js"></script>
+	
+	<script src="JavaScript/html5slider.js"></script>
+	<script src="JavaScript/main.js"></script>
+</html>
